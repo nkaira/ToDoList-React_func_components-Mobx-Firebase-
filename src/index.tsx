@@ -1,16 +1,15 @@
-import React from "react";
 import ReactDOM from "react-dom";
-import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
+import { getFirestore } from "firebase/firestore";
 
-import store from "./store/index";
 import App from "./components/App/App";
+import { initializeFirebase } from "firebaseDB/firebase_init";
+
+getFirestore(initializeFirebase);
 
 ReactDOM.render(
     <BrowserRouter>
-        <Provider store={store} >
-            <App />
-        </Provider >
+        <App />
     </BrowserRouter>,
     document.getElementById('root')
 );
