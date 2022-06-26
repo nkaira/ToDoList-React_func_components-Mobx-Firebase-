@@ -1,5 +1,5 @@
 # React To Do List v2.2.
-Welcome to my web application. This is my fifth work. The project was written by using functional components.
+Welcome to my web application. Project was written by using functional components.
 In this project firebase.google was used as an emulation of requests to the server.
 env variables were loaded for educational purposes and do not contain any confidential data.
 
